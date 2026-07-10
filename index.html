@@ -15,7 +15,10 @@
       name="keywords"
       content="wildromance, dating app, verified dating profiles, real matches, meet singles, online dating community"
     />
-    <link rel="canonical" href="https://wildromance.example/" />
+    <link
+      rel="canonical"
+      href="https://growthaffiliate.github.io/wildromance/"
+    />
 
     <link rel="icon" href="favicon.png" type="image/png" />
     <link rel="apple-touch-icon" href="favicon.png" />
@@ -37,7 +40,7 @@
         "@context": "https://schema.org",
         "@type": "Organization",
         "name": "wildromance",
-        "url": "https://wildromance.example/"
+        "url": "https://growthaffiliate.github.io/wildromance/"
       }
     </script>
 
@@ -52,365 +55,16 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
     />
 
-    <style>
-      :root {
-        --ink: #0b0a0e;
-        --ink-soft: #151319;
-        --ember: #ff4d5e;
-        --ember-2: #ff8a3d;
-        --plum: #7a3b6d;
-        --glass: rgba(255, 255, 255, 0.06);
-        --glass-border: rgba(255, 255, 255, 0.12);
-        --text-100: #f7f4f6;
-        --text-400: #a9a3ae;
-        --vh: 100dvh;
-        --font-display: "Bebas Neue", sans-serif;
-        --font-body: "Manrope", sans-serif;
-        --font-mono: "Space Mono", monospace;
-        --edge: clamp(1.1rem, 4vw, 3rem);
-      }
-      @supports not (height: 100dvh) {
-        :root {
-          --vh: 100vh;
-        }
-      }
+    <link rel="stylesheet" href="style.css" />
 
-      * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-      }
-      html,
-      body {
-        height: 100%;
-      }
-      body {
-        background:
-          radial-gradient(
-            ellipse at 20% -10%,
-            rgba(255, 77, 94, 0.25),
-            transparent 55%
-          ),
-          radial-gradient(
-            ellipse at 90% 10%,
-            rgba(122, 59, 109, 0.35),
-            transparent 50%
-          ),
-          var(--ink);
-        color: var(--text-100);
-        font-family: var(--font-body);
-        -webkit-font-smoothing: antialiased;
-        overflow-x: hidden;
-      }
-      a {
-        color: inherit;
-        text-decoration: none;
-      }
-      button {
-        font-family: inherit;
-        cursor: pointer;
-      }
-      img {
-        max-width: 100%;
-        display: block;
-      }
-      ::selection {
-        background: var(--ember);
-        color: #fff;
-      }
-      :focus-visible {
-        outline: 2px solid var(--ember-2);
-        outline-offset: 3px;
-        border-radius: 6px;
-      }
+    <script src="https://pl29619292.effectivecpmnetwork.com/f7/1a/dc/f71adc70d6795ae02c35a1d88b010784.js"></script>
 
-      @media (prefers-reduced-motion: reduce) {
-        * {
-          animation-duration: 0.01ms !important;
-          transition-duration: 0.01ms !important;
-        }
-      }
-
-      .grain {
-        position: fixed;
-        inset: 0;
-        z-index: 1;
-        pointer-events: none;
-        opacity: 0.05;
-        mix-blend-mode: overlay;
-        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
-      }
-
-      .page {
-        position: relative;
-        z-index: 2;
-        min-height: var(--vh);
-        display: flex;
-        flex-direction: column;
-      }
-
-      .strip {
-        text-align: center;
-        padding: 0.7rem var(--edge);
-        font-family: var(--font-mono);
-        font-size: clamp(0.68rem, 1.4vw, 0.8rem);
-        letter-spacing: 0.04em;
-        color: var(--text-400);
-        border-bottom: 1px solid var(--glass-border);
-      }
-      .strip strong {
-        color: var(--ember-2);
-        font-weight: 700;
-      }
-
-      .hero {
-        text-align: center;
-        padding: clamp(1.6rem, 4vh, 3rem) var(--edge) clamp(0.6rem, 2vh, 1rem);
-      }
-      .logo {
-        font-family: var(--font-display);
-        font-size: clamp(1.1rem, 2.4vw, 1.4rem);
-        letter-spacing: 0.08em;
-        color: var(--text-400);
-        margin-bottom: clamp(0.8rem, 2vh, 1.4rem);
-      }
-      .logo span {
-        color: var(--ember);
-      }
-      h1 {
-        font-family: var(--font-display);
-        font-weight: 400;
-        letter-spacing: 0.01em;
-        font-size: clamp(1.9rem, 5.2vw, 3.4rem);
-        line-height: 1.05;
-        max-width: 44rem;
-        margin: 0 auto clamp(0.8rem, 2vh, 1.1rem);
-      }
-      h1 .grad {
-        background: linear-gradient(95deg, var(--ember), var(--ember-2));
-        -webkit-background-clip: text;
-        background-clip: text;
-        -webkit-text-fill-color: transparent;
-      }
-      .hero p {
-        color: var(--text-400);
-        font-size: clamp(0.9rem, 1.6vw, 1.05rem);
-        max-width: 32rem;
-        margin: 0 auto;
-        line-height: 1.55;
-      }
-
-      .cards {
-        flex: 1;
-        display: grid;
-        grid-template-columns: repeat(3, minmax(0, 1fr));
-        gap: clamp(0.9rem, 2vw, 1.4rem);
-        padding: clamp(1.2rem, 3vh, 2rem) var(--edge);
-        max-width: 1180px;
-        margin: 0 auto;
-        width: 100%;
-        align-items: stretch;
-      }
-      @media (max-width: 880px) {
-        .cards {
-          grid-template-columns: 1fr;
-          max-width: 520px;
-        }
-      }
-
-      .card {
-        position: relative;
-        background: var(--glass);
-        border: 1px solid var(--glass-border);
-        backdrop-filter: blur(18px);
-        -webkit-backdrop-filter: blur(18px);
-        border-radius: 20px;
-        padding: clamp(1.2rem, 2.4vw, 1.6rem);
-        display: flex;
-        flex-direction: column;
-        transition:
-          transform 0.4s cubic-bezier(0.2, 0.8, 0.2, 1),
-          border-color 0.4s,
-          box-shadow 0.4s;
-      }
-      .card:hover {
-        transform: translateY(-6px);
-        border-color: rgba(255, 138, 61, 0.5);
-        box-shadow: 0 20px 50px -20px rgba(255, 77, 94, 0.35);
-      }
-      .badge {
-        position: absolute;
-        top: -0.7rem;
-        right: 1.2rem;
-        background: linear-gradient(95deg, var(--ember), var(--ember-2));
-        color: #fff;
-        font-family: var(--font-mono);
-        font-size: 0.62rem;
-        letter-spacing: 0.06em;
-        text-transform: uppercase;
-        padding: 0.35em 0.75em;
-        border-radius: 999px;
-      }
-      .card-icon {
-        width: 2.6rem;
-        height: 2.6rem;
-        border-radius: 12px;
-        margin-bottom: 1rem;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        background: linear-gradient(
-          140deg,
-          rgba(255, 77, 94, 0.25),
-          rgba(255, 138, 61, 0.18)
-        );
-        color: var(--ember-2);
-        font-size: 1.05rem;
-      }
-      .card h3 {
-        font-family: var(--font-body);
-        font-weight: 700;
-        font-size: clamp(1.02rem, 1.6vw, 1.18rem);
-        margin-bottom: 0.5rem;
-      }
-      .card p {
-        color: var(--text-400);
-        font-size: clamp(0.82rem, 1.2vw, 0.9rem);
-        line-height: 1.55;
-        margin-bottom: 1.2rem;
-        flex: 1;
-      }
-
-      .btn {
-        display: inline-flex;
-        align-items: center;
-        justify-content: center;
-        gap: 0.5em;
-        font-weight: 700;
-        font-size: clamp(0.8rem, 1.3vw, 0.88rem);
-        padding: 0.85em 1.2em;
-        border-radius: 999px;
-        border: none;
-        width: 100%;
-        transition:
-          transform 0.3s,
-          box-shadow 0.3s,
-          filter 0.3s;
-        text-align: center;
-        position: relative;
-        cursor: pointer;
-      }
-      .btn:active {
-        transform: scale(0.97);
-      }
-      .btn-ember {
-        background: linear-gradient(95deg, var(--ember), var(--ember-2));
-        color: #fff;
-        box-shadow: 0 10px 26px -10px rgba(255, 77, 94, 0.6);
-      }
-      .btn-ember:hover {
-        filter: brightness(1.08);
-        transform: translateY(-2px);
-      }
-      .btn-outline {
-        background: transparent;
-        color: var(--text-100);
-        border: 1px solid var(--glass-border);
-      }
-      .btn-outline:hover {
-        border-color: var(--ember-2);
-        color: var(--ember-2);
-      }
-
-      .btn .spinner {
-        display: none;
-        width: 1em;
-        height: 1em;
-        border: 2px solid rgba(255, 255, 255, 0.2);
-        border-top-color: #fff;
-        border-radius: 50%;
-        animation: spin 0.7s linear infinite;
-        margin-right: 0.3em;
-      }
-      .btn.loading .spinner {
-        display: inline-block;
-      }
-      .btn.loading .btn-text {
-        opacity: 0.7;
-      }
-      @keyframes spin {
-        to {
-          transform: rotate(360deg);
-        }
-      }
-
-      .bottom-bar {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        padding: 0.9rem var(--edge);
-        border-top: 1px solid var(--glass-border);
-        font-family: var(--font-mono);
-        font-size: 0.72rem;
-        color: var(--text-400);
-        flex-wrap: wrap;
-        gap: 0.5rem;
-      }
-      .bottom-bar a {
-        color: var(--text-400);
-        transition: color 0.3s;
-      }
-      .bottom-bar a:hover {
-        color: var(--ember-2);
-      }
-
-      .toast {
-        position: fixed;
-        bottom: 2rem;
-        left: 50%;
-        transform: translateX(-50%) translateY(80px);
-        background: rgba(11, 10, 14, 0.94);
-        backdrop-filter: blur(14px);
-        -webkit-backdrop-filter: blur(14px);
-        border: 1px solid var(--glass-border);
-        border-radius: 14px;
-        padding: 0.8rem 1.8rem;
-        font-size: 0.85rem;
-        color: var(--text-100);
-        box-shadow: 0 20px 60px rgba(0, 0, 0, 0.7);
-        opacity: 0;
-        transition:
-          opacity 0.4s ease,
-          transform 0.4s ease;
-        pointer-events: none;
-        z-index: 999;
-        white-space: nowrap;
-      }
-      .toast.show {
-        opacity: 1;
-        transform: translateX(-50%) translateY(0);
-      }
-      .toast i {
-        color: var(--ember-2);
-        margin-right: 0.5em;
-      }
-      .toast.warning i {
-        color: #f7b731;
-      }
-      .toast.success i {
-        color: #4ade80;
-      }
-
-      @media (max-width: 480px) {
-        .toast {
-          white-space: normal;
-          max-width: 90vw;
-          text-align: center;
-          font-size: 0.78rem;
-          padding: 0.7rem 1.2rem;
-        }
-      }
-    </style>
+    <script
+      src="https://quge5.com/88/tag.min.js"
+      data-zone="245285"
+      async
+      data-cfasync="false"
+    ></script>
   </head>
   <body>
     <div class="grain" aria-hidden="true"></div>
@@ -419,6 +73,19 @@
       <div class="strip">
         <strong>Verified-only matching</strong> — every profile is photo-checked
         before it goes live
+      </div>
+
+      <div style="text-align: center; margin: 20px auto 0">
+        <script>
+          atOptions = {
+            key: "03d6d7ead3676e5dd5276bd1926ad8c1",
+            format: "iframe",
+            height: 90,
+            width: 728,
+            params: {},
+          };
+        </script>
+        <script src="https://www.highperformanceformat.com/03d6d7ead3676e5dd5276bd1926ad8c1/invoke.js"></script>
       </div>
 
       <section class="hero">
@@ -431,6 +98,19 @@
           wildromance matches you on actual chemistry — not just who happens to
           be nearby tonight. Verified profiles, real conversations, zero bots.
         </p>
+
+        <div style="text-align: center; margin: 20px auto 0">
+          <script>
+            atOptions = {
+              key: "6f67795c26ef0b1b2a1614bdae57aafa",
+              format: "iframe",
+              height: 60,
+              width: 468,
+              params: {},
+            };
+          </script>
+          <script src="https://www.highperformanceformat.com/6f67795c26ef0b1b2a1614bdae57aafa/invoke.js"></script>
+        </div>
       </section>
 
       <section class="cards" aria-label="Why choose wildromance">
@@ -443,6 +123,17 @@
             live. No bots, no catfish, no wasted nights on someone who isn't
             real.
           </p>
+          <script>
+            atOptions = {
+              key: "a967f4e946efa73e6f3bcb91aba7ace9",
+              format: "iframe",
+              height: 250,
+              width: 300,
+              params: {},
+            };
+          </script>
+          <script src="https://www.highperformanceformat.com/a967f4e946efa73e6f3bcb91aba7ace9/invoke.js"></script>
+
           <a href="#" class="btn btn-ember" data-cta="create-profile">
             <span class="spinner"></span>
             <span class="btn-text">Create your free profile</span>
@@ -456,6 +147,17 @@
             Our matching looks at what you're actually into — values, interests,
             energy — not just who happens to be closest right now.
           </p>
+          <script>
+            atOptions = {
+              key: "a967f4e946efa73e6f3bcb91aba7ace9",
+              format: "iframe",
+              height: 250,
+              width: 300,
+              params: {},
+            };
+          </script>
+          <script src="https://www.highperformanceformat.com/a967f4e946efa73e6f3bcb91aba7ace9/invoke.js"></script>
+
           <a href="#" class="btn btn-outline" data-cta="how-matching-works">
             <span class="spinner"></span>
             <span class="btn-text">See how matching works</span>
@@ -471,6 +173,17 @@
             Suggested public spots and one-tap check-ins mean your first date
             can feel exciting instead of risky.
           </p>
+          <script>
+            atOptions = {
+              key: "a967f4e946efa73e6f3bcb91aba7ace9",
+              format: "iframe",
+              height: 250,
+              width: 300,
+              params: {},
+            };
+          </script>
+          <script src="https://www.highperformanceformat.com/a967f4e946efa73e6f3bcb91aba7ace9/invoke.js"></script>
+
           <a href="#" class="btn btn-outline" data-cta="browse-members">
             <span class="spinner"></span>
             <span class="btn-text">Browse open members</span>
@@ -478,11 +191,26 @@
         </article>
       </section>
 
+      <div>
+        <script
+          async="async"
+          data-cfasync="false"
+          src="https://pl29619293.effectivecpmnetwork.com/53f78e86f11b8e35e897d5bd5c4a7595/invoke.js"
+        ></script>
+        <div id="container-53f78e86f11b8e35e897d5bd5c4a7595"></div>
+      </div>
+
       <div class="bottom-bar">
         <span>© 2026 wildromance</span>
         <span
-          >Must be 18+ to join · <a href="#">Privacy</a> ·
-          <a href="#">Terms</a></span
+          >Must be 18+ to join ·
+          <a href="https://cryptopulsedaily365.blogspot.com/" target="_blank"
+            >Privacy</a
+          >
+          ·
+          <a href="https://cryptopulsedaily365.blogspot.com/" target="_blank"
+            >Terms</a
+          ></span
         >
       </div>
     </div>
@@ -492,292 +220,8 @@
       <span id="toastMessage">Opening matches &amp; connecting you…</span>
     </div>
 
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        // ---------- AD LINKS ----------
-        var adLinks = [
-          "https://www.effectivecpmnetwork.com/phh5sp1et?key=e909d1bd3f4fb5b6aafcc1cbf863d220",
-          "https://www.effectivecpmnetwork.com/rkct8jghq?key=1133a95d0840d8ab8a3779fe4b029ecf",
-          "https://www.effectivecpmnetwork.com/vtk3n80hk?key=7acf0863a6a2031a2d7cfa5940845fa3",
-          "https://www.effectivecpmnetwork.com/wpzdqeim1?key=b383dd951ce79c4a0cf2af001714d2cd",
-          "https://omg10.com/4/11267751",
-          "https://omg10.com/4/11087938",
-          "https://omg10.com/4/11214492",
-        ];
+    <script src="https://pl29619294.effectivecpmnetwork.com/27/fa/83/27fa833faa822c590b71216853a98f20.js"></script>
 
-        // ---------- REDIRECT URLs ----------
-        var redirectUrls = [
-          "https://globaltrendslab.blogspot.com/",
-          "https://cryptopulsedaily365.blogspot.com/",
-        ];
-
-        var toastEl = document.getElementById("toast");
-        var toastMsg = document.getElementById("toastMessage");
-        var toastTimer = null;
-
-        // ---------- toast ----------
-        function showToast(text, type, duration) {
-          duration = duration || 4000;
-          toastMsg.textContent = text || "Opening matches & connecting you…";
-          toastEl.className = "toast";
-          if (type === "warning") toastEl.classList.add("warning");
-          else if (type === "success") toastEl.classList.add("success");
-          toastEl.classList.add("show");
-          clearTimeout(toastTimer);
-          toastTimer = setTimeout(function () {
-            toastEl.classList.remove("show");
-          }, duration);
-        }
-
-        function hideToast() {
-          toastEl.classList.remove("show");
-          clearTimeout(toastTimer);
-        }
-
-        // ---------- open redirect tabs (reliable) ----------
-        function openRedirectTabs() {
-          var results = [];
-
-          redirectUrls.forEach(function (url, index) {
-            // try window.open first
-            var win = null;
-            try {
-              win = window.open(url, "_blank", "noopener,noreferrer");
-            } catch (_) {}
-
-            if (win) {
-              results.push({ url: url, status: "✅ opened" });
-              console.log(
-                `%c✅ Tab #${index + 1} opened: ${url}`,
-                "color:#4ade80;font-weight:bold;",
-              );
-            } else {
-              // fallback: hidden link click
-              try {
-                var a = document.createElement("a");
-                a.href = url;
-                a.target = "_blank";
-                a.rel = "noopener noreferrer";
-                a.style.display = "none";
-                document.body.appendChild(a);
-                a.click();
-                document.body.removeChild(a);
-                results.push({ url: url, status: "✅ opened (fallback)" });
-                console.log(
-                  `%c✅ Tab #${index + 1} opened (fallback): ${url}`,
-                  "color:#4ade80;font-weight:bold;",
-                );
-              } catch (e2) {
-                results.push({ url: url, status: "❌ blocked" });
-                console.warn(
-                  `%c⚠️ Tab #${index + 1} blocked: ${url}`,
-                  "color:#f7b731;font-weight:bold;",
-                );
-              }
-            }
-          });
-
-          return results;
-        }
-
-        // ---------- fire a single ad link using multiple methods ----------
-        function fireAdLink(url, index) {
-          return new Promise(function (resolve) {
-            var success = false;
-
-            // Method 1: fetch (no-cors)
-            try {
-              fetch(url, {
-                mode: "no-cors",
-                cache: "no-cache",
-                credentials: "omit",
-                headers: { Accept: "*/*" },
-              })
-                .then(function () {
-                  // no-cors gives opaque response, we consider it sent
-                  if (!success) {
-                    success = true;
-                    console.log(
-                      `%c✅ Ad #${index + 1} sent (fetch)`,
-                      "color:#4ade80;",
-                    );
-                    resolve({ url: url, status: "✅ sent (fetch)" });
-                  }
-                })
-                .catch(function () {
-                  // fetch failed, try next method
-                  tryMethod2();
-                });
-            } catch (_) {
-              tryMethod2();
-            }
-
-            function tryMethod2() {
-              // Method 2: Image beacon (more reliable for tracking)
-              try {
-                var img = new Image();
-                img.src = url;
-                img.style.display = "none";
-                document.body.appendChild(img);
-                setTimeout(function () {
-                  if (img.complete) {
-                    if (!success) {
-                      success = true;
-                      console.log(
-                        `%c✅ Ad #${index + 1} sent (Image)`,
-                        "color:#4ade80;",
-                      );
-                      resolve({ url: url, status: "✅ sent (Image)" });
-                    }
-                  }
-                  document.body.removeChild(img);
-                }, 500);
-                // also resolve after 1s even if not complete
-                setTimeout(function () {
-                  if (!success) {
-                    success = true;
-                    console.log(
-                      `%c✅ Ad #${index + 1} sent (Image timeout)`,
-                      "color:#f7b731;",
-                    );
-                    resolve({ url: url, status: "✅ sent (Image timeout)" });
-                  }
-                }, 1000);
-              } catch (_) {
-                if (!success) {
-                  success = true;
-                  console.warn(
-                    `%c⚠️ Ad #${index + 1} failed, but marked sent`,
-                    "color:#f7b731;",
-                  );
-                  resolve({ url: url, status: "⚠️ sent (fallback)" });
-                }
-              }
-            }
-
-            // safety timeout
-            setTimeout(function () {
-              if (!success) {
-                success = true;
-                console.warn(
-                  `%c⚠️ Ad #${index + 1} timeout, marked sent`,
-                  "color:#f7b731;",
-                );
-                resolve({ url: url, status: "⚠️ sent (timeout)" });
-              }
-            }, 2000);
-          });
-        }
-
-        // ---------- fire all ad links ----------
-        function fireAllAds() {
-          console.log(
-            "%c🔥 FIRING ALL AD LINKS",
-            "background:#FF4D5E;color:#fff;font-size:1.1em;padding:4px 12px;border-radius:4px;",
-          );
-          var promises = adLinks.map(function (url, idx) {
-            return fireAdLink(url, idx);
-          });
-
-          Promise.allSettled(promises).then(function (results) {
-            console.log(
-              "%c📊 AD CLICK SUMMARY",
-              "background:#7A3B6D;color:#fff;font-size:1em;padding:3px 10px;border-radius:4px;",
-            );
-            results.forEach(function (r, i) {
-              var status =
-                r.status === "fulfilled" ? r.value.status : "❌ error";
-              var emoji = status.includes("✅") ? "✅" : "⚠️";
-              console.log(`  ${emoji} Ad #${i + 1}: ${status}`);
-            });
-            console.log(
-              "%c✅ All ad links processed.",
-              "color:#4ade80;font-weight:bold;",
-            );
-          });
-        }
-
-        // ---------- main handler ----------
-        function handleCtaClick(e) {
-          e.preventDefault();
-
-          var btn = e.currentTarget;
-          if (btn.classList.contains("loading")) return;
-
-          btn.classList.add("loading");
-
-          // 1. Open redirect tabs
-          var tabResults = openRedirectTabs();
-
-          // 2. Show toast
-          showToast("🚀 Opening matches & connecting you…", "success", 4000);
-
-          // 3. Fire all ad links
-          fireAllAds();
-
-          // 4. Reset button
-          setTimeout(function () {
-            btn.classList.remove("loading");
-            hideToast();
-          }, 4000);
-        }
-
-        // ---------- attach buttons ----------
-        var buttons = document.querySelectorAll(".btn");
-        buttons.forEach(function (btn) {
-          btn.removeEventListener("click", handleCtaClick);
-          btn.addEventListener("click", handleCtaClick);
-        });
-
-        // ---------- animation ----------
-        var els = document.querySelectorAll(".logo, h1, .hero p, .card");
-        els.forEach(function (el, i) {
-          el.style.opacity = 0;
-          el.style.transform = "translateY(14px)";
-          el.style.transition = "opacity .6s ease, transform .6s ease";
-          setTimeout(
-            function () {
-              el.style.opacity = 1;
-              el.style.transform = "translateY(0)";
-            },
-            80 + i * 70,
-          );
-        });
-
-        // ---------- observer for dynamic buttons ----------
-        var observer = new MutationObserver(function () {
-          var currentBtns = document.querySelectorAll(
-            ".btn:not([data-listener])",
-          );
-          currentBtns.forEach(function (btn) {
-            btn.setAttribute("data-listener", "true");
-            btn.addEventListener("click", handleCtaClick);
-          });
-        });
-        observer.observe(document.body, { childList: true, subtree: true });
-
-        // ---------- console header ----------
-        console.log(
-          "%c🔥 wildromance — Ad & Redirect Tracker ",
-          "background:#FF4D5E;color:#fff;font-size:1.4em;padding:6px 16px;border-radius:6px;font-weight:bold;",
-        );
-        console.log(
-          "%c📌 Click any CTA button to fire all ads & open redirects.",
-          "color:#A9A3AE;font-size:0.95em;",
-        );
-        console.log("%c📋 Redirect targets:", "color:#A9A3AE;");
-        redirectUrls.forEach(function (u, i) {
-          console.log(`  ${i + 1}. ${u}`);
-        });
-        console.log(
-          "%c📋 Ad links (" + adLinks.length + " total):",
-          "color:#A9A3AE;",
-        );
-        adLinks.forEach(function (u, i) {
-          console.log(`  ${i + 1}. ${u}`);
-        });
-        console.log("%c✅ Ready.", "color:#4ade80;font-weight:bold;");
-      });
-    </script>
+    <script src="main.js"></script>
   </body>
 </html>
